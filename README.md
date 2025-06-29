@@ -19,13 +19,13 @@ Example:
 ./network-helper.sh 8.8.8.8
 ```
 
-## Quick Start on a VPS
-To download and run the script directly on a VPS:
+## Quick Start
+To download and run the script directly on your server:
 ```sh
-wget https://raw.githubusercontent.com/iebu123/network-helper/main/network-helper.sh -O network-helper.sh
-chmod +x network-helper.sh
-./network-helper.sh <IP_or_hostname>
+bash <(wget -qO- https://raw.githubusercontent.com/iebu123/network-helper/main/network-helper.sh) <IP_or_hostname>
 ```
+❗️ Note: Replace `<IP_or_hostname>` with your target IP address or domain. The script will not run without this argument.
+
 This uses the latest version from the GitHub repository: https://github.com/iebu123/network-helper
 
 ## Output

@@ -26,7 +26,7 @@ PING_OUTPUT=$(ping -c 10 "$TARGET" 2>&1)
 echo "🔍 Step 2: Running mtr..."
 MTR_OUTPUT=$(mtr -rw -c 10 "$TARGET" 2>&1)
 
-echo "🗺️ Step 3: Running traceroute..."
+echo "🗺️  Step 3: Running traceroute..."
 TRACE_OUTPUT=$(traceroute "$TARGET" 2>&1)
 
 # ─── Summarize Ping Results ──────────────────
