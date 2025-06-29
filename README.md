@@ -8,6 +8,7 @@ A simple Bash script to automate network diagnostics using `ping`, `mtr`, and `t
 - Summarizes packet loss and latency.
 - Optionally saves a full report with raw outputs and summary.
 
+
 ## Usage
 ```sh
 ./network-helper.sh <IP_or_hostname>
@@ -17,6 +18,15 @@ Example:
 ```sh
 ./network-helper.sh 8.8.8.8
 ```
+
+## Quick Start on a VPS
+To download and run the script directly on a VPS:
+```sh
+wget https://raw.githubusercontent.com/iebu123/network-helper/main/network-helper.sh -O network-helper.sh
+chmod +x network-helper.sh
+./network-helper.sh <IP_or_hostname>
+```
+This uses the latest version from the GitHub repository: https://github.com/iebu123/network-helper
 
 ## Output
 - Shows a summary of packet loss and latency in the terminal.
