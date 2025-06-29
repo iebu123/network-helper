@@ -9,24 +9,25 @@ A simple Bash script to automate network diagnostics using `ping`, `mtr`, and `t
 - Optionally saves a full report with raw outputs and summary.
 
 
-## Usage
-```sh
-./network-helper.sh <IP_or_hostname>
-```
 
-Example:
-```sh
-./network-helper.sh 8.8.8.8
-```
-
-## Quick Start
-To download and run the script directly on your server:
+## Run Instantly (One-Liner)
+To download and run the script directly on your server (no need to save the file):
 ```sh
 bash <(wget -qO- https://raw.githubusercontent.com/iebu123/network-helper/main/network-helper.sh) <IP_or_hostname>
 ```
 ❗️ Note: Replace `<IP_or_hostname>` with your target IP address or domain. The script will not run without this argument.
 
 This uses the latest version from the GitHub repository: https://github.com/iebu123/network-helper
+
+## Usage
+You can also clone or download the script and run it manually:
+```sh
+./network-helper.sh <IP_or_hostname>
+```
+Example:
+```sh
+./network-helper.sh 8.8.8.8
+```
 
 ## Output
 - Shows a summary of packet loss and latency in the terminal.
